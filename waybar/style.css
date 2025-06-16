@@ -1,0 +1,139 @@
+@import url("/home/fish/.cache/wal/colors-waybar.css");
+
+*{
+    font-family: "Roboto Mono", NerdFonts, FontAwesome, Roboto, Helvetica;
+    font-size: 13px;
+    margin: 1px;
+}
+button{
+    box-shadow: inset 0 -3px transparent;
+    border: none;
+    border-radius: 0;
+}
+window#waybar{
+    background-color: rgba(0,0,0,0);
+    
+
+}
+
+#workspaces {
+    padding: 2px 5px;
+    background-color: @background;
+    color: @foreground;
+    border-radius: 10px;
+    border: 2px solid @foreground;
+}
+#workspaces button{
+    border-radius: 10px;
+    color: @foreground;
+    background-color: @background;
+    transition: all .5s ease;
+}
+#workspaces button:hover{
+    background-color: @foreground;
+    color: @background;
+}
+
+
+#clock{
+    background-color: @background;
+    padding: 0px 10px;
+    color: @foreground;
+    border-radius: 10px;
+    /*border: 2px solid @foreground;*/
+}
+#custom-clock{
+    background-color: @background;
+    padding: 0px 10px;
+    color: @foreground;
+    border-radius: 10px;
+    border: 2px solid @foreground;
+}
+#backlight{
+    background-color: @background;
+    color: @foreground;
+    padding: 0 10px;
+    border-radius: 10px;
+    transition: all .5s ease;
+}
+#backlight:hover{
+    background-color: @foreground;
+    color: @background;
+}
+#utils{
+    background-color: @background;
+    border-radius: 10px;
+    color: @foreground;
+    border: 2px solid @foreground;
+    padding: 2px 5px;
+}
+#pulseaudio{
+    padding: 0 10px;
+    transition: all .5s ease;
+    border-radius: 10px;
+}
+#pulseaudio:hover{
+    background-color: @foreground;
+    color: @background;
+}
+#network{
+    padding: 0 10px;
+    transition: all .5s ease;
+    border-radius: 10px;
+}
+#network:hover{
+    background-color: @foreground;
+    color: @background;
+}
+#bluetooth{
+    padding: 0 10px;
+    transition: all .5s ease;
+    border-radius: 10px;
+}
+#bluetooth:hover{
+    background-color: @foreground;
+    color: @background;
+}
+
+#battery{
+    background-color: @background;
+    padding: 0 10px;
+    color: @foreground;
+    border-radius: 10px;
+    /*border: 2px solid @background;*/
+    transition: all .5s ease;
+}
+#battery.charging, #battery.plugged{
+    background-color: @foreground;
+    color: @background;
+}
+#battery:hover{
+    border-radius: 10px;
+    color: @background;
+    background-color: @foreground;
+}
+#custom-power{
+    padding: 0 10px;
+    background-color: @background;
+    color: @foreground;
+    border-radius: 10px;
+    transition: all .5s ease;
+}
+#custom-power:hover{
+    background-color: @foreground;
+    color: @background;
+}
+#custom-spotify{
+    color: @foreground;
+    background-color: @background;
+    padding: 0 10px;
+    border-radius: 10px;
+    transition: all .5s ease;
+    opacity: 0.5;
+}
+#custom-spotify:hover{
+    opacity: 1;
+}
+#clock-.calendar{
+    background-color: #000000;
+}

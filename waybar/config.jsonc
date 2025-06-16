@@ -1,0 +1,112 @@
+
+{
+    "layer": "top",
+    "height": 0,
+    "spacing": 0,
+    "output": "DP-1", 
+    "modules-left":[
+        "hyprland/workspaces",
+        "custom/spotify"
+    ],
+
+    "modules-center":[
+        "clock"
+        //"custom/clock"
+    ],
+    
+    "modules-right":[
+        //"battery",
+        "group/utils"
+    ],
+
+
+//workspaces
+    "hyprland/workspaces":{
+        "format": "{icon}",
+        "expand": true,
+        "format-icons":{
+            "active": ""
+        }
+    },
+
+
+//clock
+    "clock":{
+        "format": "{:%H:%M %p - %a, %d %b %Y}",
+        "tooltip": true,
+        "tooltip-format": "{calendar}",
+        "calendar": {
+            "mode": "month",
+            "format": {
+                "months": "{}",
+                "days": "{}"
+            }
+        }
+    },
+    "custom/clock":{
+        "exec": "echo $(date +'%H:%M %p - %a, %d %b %Y')",
+        "format": "{text}"
+    },
+
+    "group/utils":{
+        "orientation": "horizontal",
+        "modules": [
+            "pulseaudio",
+            "network",
+            "custom/power"
+        ]
+    },
+
+//audio
+    "pulseaudio":{
+        "format": "{icon}",
+        "justify": "center",
+        "format-muted": "",
+        "tooltip": true,
+        "tooltip-format": "{volume}%",
+
+        "max-volume": 100,
+
+        "on-click": "pavucontrol",
+        "interval": 1,
+
+        "format-icons": {
+            "headphone": "",
+            "default": ["", "", ""]
+        }
+    },
+//network
+    "network":{
+        "interval": 1,
+        "justify": "center",
+        "format-wifi": " ",
+        "format-disconnected": "󰖪 ",
+        "format-disabled": "󱛏 ",
+	"format-ethernet": "󰈀",
+        "tooltip-format": "{essid}: {bandwidthTotalBits}",
+        "on-click": "$HOME/.config/waybar/wifi_toggle.sh"
+    },
+//power-button
+    "custom/power": {
+        "format": "",
+        "justify": "center",
+        "tooltip": false,
+        "menu": "on-click",
+        "menu-file": "$HOME/.config/waybar/power_menu.xml",
+        "menu-actions": {
+            "shutdown": "shutdown now",
+            "reboot": "reboot",
+            "suspend": "systemctl suspend"
+        }
+    },
+
+//spotify-attempt
+    "custom/spotify": {
+        "exec": "/usr/bin/python3 /home/fish/.config/waybar/mediaplayer.py --player spotify",
+        "format": "{}  ",
+        "return-type": "json",
+        "on-click": "playerctl play-pause",
+        "on-scroll-up": "playerctl next",
+        "on-scroll-down": "playerctl previous"
+    }
+}
