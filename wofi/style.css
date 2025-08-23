@@ -1,0 +1,42 @@
+@import ".cache/wal/colors-waybar.css";
+
+*{
+    font-family: 'Ariel';
+}
+
+window{
+    font-size: 20px;
+    border: @background 1px solid;
+    border-radius: 5px;
+    background-color: @background;
+    color: @color8;
+    padding: 1em;
+}
+#outer-box{
+    border-radius: 10px;
+    border: @foreground 1px solid;
+    background: none;
+    padding: 0.75em;
+}
+#entry{
+    padding: 0.5em;
+    opacity: 0.5;
+}
+#entry:selected{
+    background: @foreground;
+}
+#text{
+    color: @foreground;
+}
+#text:selected{
+    color: @background;
+}
+#input{
+    color: @foreground;
+    border: none;
+    background-color: @background;
+}
+image{
+    margin-left: .25em;
+    margin-right: .25em;
+}
