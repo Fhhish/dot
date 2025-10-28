@@ -1,6 +1,6 @@
 
 {
-    "layer": "top",
+//    "layer": "top",
     "height": 0,
     "spacing": 0,
     "output": "DP-1", 
@@ -22,24 +22,51 @@
 
 //workspaces
     "hyprland/workspaces":{
-        "format": "{icon}",
+        "all-outputs": true,
+        "format": "{icon} {windows}",
         "expand": true,
         "format-icons":{
-            "active": ""
-        }
+            "active": "󰍎 ",
+            "empty": " 󱗽"
+        },
+        "format-window-separator": " ⥍ ",
+        "window-rewrite-default": "",
+        "window-rewrite":{
+            "class<firefox>": "󰈹",
+            "class<discord>": "",
+            "class<kitty>": "",
+            "class<krita>": "",
+            "title<nvim>": "",
+            "class<xwaylandvideobridge>": "",
+            "class<spotify>": "",
+            "class<steam>": "",
+            "class<org.kde.dolphin>": "",
+            "class<VirtualBox Manager>": "",
+            "class<VirtualBox Machine>": ""
+
+        },
+        "ignore-workspaces":[
+            "(special:)?xwaylandvideobridge"
+        ]
+        //"workspace-taskbar": {
+          //"enable": true
+        //}
     },
 
 
 //clock
     "clock":{
-        "format": "{:%H:%M %p - %a, %d %b %Y}",
+        "format": "{:%H:%M - %a, %d/%m/%y}",
         "tooltip": true,
         "tooltip-format": "{calendar}",
         "calendar": {
             "mode": "month",
             "format": {
-                "months": "{}",
-                "days": "{}"
+                "months": "<span color='white'><b>{}</b></span>",
+                "days": "{}",
+                "weeks": "{}",
+                "weekdays": "{}",
+                "today": "<span color='green'><b><u>{}</u></b></span>"
             }
         }
     },
@@ -51,11 +78,21 @@
     "group/utils":{
         "orientation": "horizontal",
         "modules": [
+            "custom/diag",
             "pulseaudio",
             "network",
             "custom/power"
         ]
     },
+
+//btop
+    "custom/diag": {
+        "on-click" : "kitty --hold btop",
+        "format" : "󱕍",
+        "tooltip": true,
+        "tooltip-format": "Stats"
+    },
+
 
 //audio
     "pulseaudio":{
@@ -83,12 +120,13 @@
         "format-disconnected": "󰖪 ",
         "format-disabled": "󱛏 ",
 	"format-ethernet": "󰈀",
+	"tooltip-format-ethernet": "{ipaddr}: {bandwidthTotalBits}",
         "tooltip-format": "{essid}: {bandwidthTotalBits}",
         "on-click": "$HOME/.config/waybar/wifi_toggle.sh"
     },
 //power-button
     "custom/power": {
-        "format": "",
+        "format": "",
         "justify": "center",
         "tooltip": false,
         "menu": "on-click",
