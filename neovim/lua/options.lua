@@ -1,5 +1,5 @@
-vim.cmd("colorscheme pywal")
---vim.cmd("colorscheme retrobox")
+--vim.cmd("colorscheme pywal")
+vim.cmd("colorscheme retrobox")
 
 vim.cmd("syntax on")
 vim.cmd("set expandtab")
