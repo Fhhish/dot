@@ -1,0 +1,11 @@
+--vim.cmd("colorscheme pywal")
+vim.cmd("colorscheme tokyonight-night")
+--vim.cmd("colorscheme retrobox")
+
+vim.cmd("syntax on")
+vim.cmd("set expandtab")
+vim.cmd("set tabstop=4")
+vim.cmd("set shiftwidth=4")
+vim.cmd("set relativenumber")
+vim.cmd("set number")
+vim.cmd("set nowrap")
