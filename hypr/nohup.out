@@ -1,0 +1,52 @@
+[LOG] Welcome to hyprpaper!
+built from commit  ()
+[LOG] Cleaned old hyprpaper preloads (3), removing 46.8MB
+[LOG] Preloaded target /home/fish/Pictures/wallaper2.jpg in 56.12ms -> Pixel size: [3840, 2160]
+[LOG] Buffer created for target /home/fish/Pictures/wallaper2.jpg, Shared Memory usage: 33.2MB
+[LOG] Total SM usage for all buffers: 33.2MB
+[LOG] hyprpaper socket started at /run/user/1000/hypr/29e2e59fdbab8ed2cc23a20e3c6043d5decb5cdc_1746013230_256225567/.hyprpaper.sock (fd: 4)
+[LOG] configure for eDP-1
+[LOG] configure for eDP-1
+[LOG] Buffer created for target /home/fish/Pictures/wallaper2.jpg, Shared Memory usage: 5.3MB
+[LOG] Total SM usage for all buffers: 38.5MB
+[LOG] Image data for eDP-1: /home/fish/Pictures/wallaper2.jpg at [-0.00, 0.00], scale: 0.40 (original image size: [3840, 2160])
+[LOG] Submitting viewport dest size 1536x864 for 5764587acb20
+[LOG] handlePreferredScale: 1.25 for 5764587acb20
+[LOG] Buffer created for target /home/fish/Pictures/wallaper2.jpg, Shared Memory usage: 8.3MB
+[LOG] Total SM usage for all buffers: 46.8MB
+[LOG] Image data for eDP-1: /home/fish/Pictures/wallaper2.jpg at [-0.00, 0.00], scale: 0.50 (original image size: [3840, 2160])
+[LOG] Submitting viewport dest size 1536x864 for 5764587acb20
+[LOG] Welcome to hyprpaper!
+built from commit  ()
+[LOG] Cleaned old hyprpaper preloads (4), removing 59.7MB
+[LOG] Preloaded target /home/fish/Pictures/wallaper3.jpg in 20.50ms -> Pixel size: [3840, 2160]
+[LOG] Buffer created for target /home/fish/Pictures/wallaper3.jpg, Shared Memory usage: 33.2MB
+[LOG] Total SM usage for all buffers: 33.2MB
+[LOG] hyprpaper socket started at /run/user/1000/hypr/29e2e59fdbab8ed2cc23a20e3c6043d5decb5cdc_1746189459_2044113621/.hyprpaper.sock (fd: 4)
+[LOG] configure for eDP-1
+[LOG] configure for eDP-1
+[LOG] Buffer created for target /home/fish/Pictures/wallaper3.jpg, Shared Memory usage: 5.3MB
+[LOG] Total SM usage for all buffers: 38.5MB
+[LOG] Image data for eDP-1: /home/fish/Pictures/wallaper3.jpg at [-0.00, 0.00], scale: 0.40 (original image size: [3840, 2160])
+[LOG] Submitting viewport dest size 1536x864 for 5602f2b33b20
+[LOG] handlePreferredScale: 1.25 for 5602f2b33b20
+[LOG] Buffer created for target /home/fish/Pictures/wallaper3.jpg, Shared Memory usage: 8.3MB
+[LOG] Total SM usage for all buffers: 46.8MB
+[LOG] Image data for eDP-1: /home/fish/Pictures/wallaper3.jpg at [-0.00, 0.00], scale: 0.50 (original image size: [3840, 2160])
+[LOG] Submitting viewport dest size 1536x864 for 5602f2b33b20
+[LOG] Buffer created for target /home/fish/Pictures/wallaper3.jpg, Shared Memory usage: 13.0MB
+[LOG] Total SM usage for all buffers: 59.7MB
+[2025-05-02 16:24:14.363] [info] Using configuration file /home/fish/.config/waybar/config.jsonc
+[2025-05-02 16:24:14.365] [info] Unable to receive desktop appearance: GDBus.Error:org.freedesktop.DBus.Error.UnknownMethod: No such interface “org.freedesktop.portal.Settings” on object at path /org/freedesktop/portal/desktop
+[2025-05-02 16:24:14.365] [info] Using CSS file /home/fish/.config/waybar/style.css
+[2025-05-02 16:24:14.369] [warning] Error while creating the menu : Failed to get 'menu' object from GtkBuilder. Menu popup not activated.
+[2025-05-02 16:24:14.370] [error] media stopped unexpectedly, is it endless?
+[2025-05-02 16:24:14.370] [warning] module sway/window: Disabling module "sway/window", Socket path is empty
+[2025-05-02 16:24:14.385] [warning] Requested height: 30 is less than the minimum height: 46 required by the modules
+[2025-05-02 16:24:14.385] [info] Bar configured (width: 1536, height: 46) for output: eDP-1
+MESA-INTEL: warning: ../mesa-25.0.4/src/intel/vulkan/anv_formats.c:802: FINISHME: support YUV colorspace with DRM format modifiers
+MESA-INTEL: warning: ../mesa-25.0.4/src/intel/vulkan/anv_formats.c:834: FINISHME: support more multi-planar formats with DRM modifiers
+MESA-INTEL: warning: ../mesa-25.0.4/src/intel/vulkan/anv_formats.c:802: FINISHME: support YUV colorspace with DRM format modifiers
+MESA-INTEL: warning: ../mesa-25.0.4/src/intel/vulkan/anv_formats.c:834: FINISHME: support more multi-planar formats with DRM modifiers
+Gdk-Message: 16:24:44.150: Error reading events from display: Broken pipe
+Gdk-Message: 16:24:44.151: Lost connection to Wayland compositor.
