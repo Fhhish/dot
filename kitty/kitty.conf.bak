@@ -1,0 +1,15 @@
+allow_remote_control yes
+
+# include ~/.cache/wal/colors-kitty.conf
+# selection_background #FFC0CB
+# selection_foreground #FFC0CB
+
+font_family monospace
+bold_font auto
+italic_font auto
+background_opacity 0.95
+
+# BEGIN_KITTY_THEME
+# Afterglow
+#include current-theme.conf
+# END_KITTY_THEME
